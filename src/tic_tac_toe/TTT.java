@@ -242,14 +242,29 @@ public class TTT extends javax.swing.JFrame
         if(count==-10)
         {
             
-            if 
-            xCount++;
-            jLabel11.setText(Integer.toString(xCount));
+            if(player =='X')
+            {
+                xCount++;
+                jLabel11.setText(Integer.toString(xCount));
+            }
+            else
+            {
+                oCount++;
+                jLabel12.setText(Integer.toString(oCount));
+            }
         }
         else if (count==10)
         {
-            oCount++;
-            jLabel12.setText(Integer.toString(oCount));
+            if(opponent =='X')
+            {
+                xCount++;
+                jLabel11.setText(Integer.toString(xCount));
+            }
+            else
+            {
+                oCount++;
+                jLabel12.setText(Integer.toString(oCount));
+            }
         }
         else if(drawcount)
         {    
@@ -1535,36 +1550,37 @@ public class TTT extends javax.swing.JFrame
         PreparedStatement ps;
         Connection conn = null;
         try 
-            {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/userdatabase?" + "user=root");
-        
-        switch(level)
         {
-            case 1:
-                ps = conn.prepareStatement("UPDATE data SET EBW=EBW+"+Integer.toString(xCount)+",EBD=EBD+"+Integer.toString(draw)+",EBL=EBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
-                ps.executeUpdate();
-                break;
-            case 4:
-                ps = conn.prepareStatement("UPDATE data SET MBW=MBW+"+Integer.toString(xCount)+",MBD=MBD+"+Integer.toString(draw)+",MBL=MBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
-                ps.executeUpdate();
-                break;
-            case 9:
-                ps = conn.prepareStatement("UPDATE data SET HBW=HBW+"+Integer.toString(xCount)+",HBD=HBD+"+Integer.toString(draw)+",HBL=HBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
-                ps.executeUpdate();
-                break;
-            case 10:
-                ps = conn.prepareStatement("UPDATE data SET IBW=IBW+"+Integer.toString(xCount)+",IBD=IBD+"+Integer.toString(draw)+",IBL=IBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
-                ps.executeUpdate();
-                break;
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/userdatabase?" + "user=root");
+            switch(level)
+            {
+                case 1:
+                    ps = conn.prepareStatement("UPDATE data SET EBW=EBW+"+Integer.toString(xCount)+",EBD=EBD+"+Integer.toString(draw)+",EBL=EBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
+                    ps.executeUpdate();
+                    break;
+                case 4:
+                    ps = conn.prepareStatement("UPDATE data SET MBW=MBW+"+Integer.toString(xCount)+",MBD=MBD+"+Integer.toString(draw)+",MBL=MBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
+                    ps.executeUpdate();
+                    break;
+                case 9:
+                    ps = conn.prepareStatement("UPDATE data SET HBW=HBW+"+Integer.toString(xCount)+",HBD=HBD+"+Integer.toString(draw)+",HBL=HBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
+                    ps.executeUpdate();
+                    break;
+                case 10:
+                    ps = conn.prepareStatement("UPDATE data SET IBW=IBW+"+Integer.toString(xCount)+",IBD=IBD+"+Integer.toString(draw)+",IBL=IBL+"+Integer.toString(oCount)+" WHERE Username='"+userid+"'");
+                    ps.executeUpdate();
+                    break;
+            }
+        }
+        catch (ClassNotFoundException | SQLException ex) 
+        {
+            Logger.getLogger(TTT.class.getName()).log(Level.SEVERE, null, ex);
         }
         xCount = 0;
         oCount = 0;
         draw =0;
-            this.setVisible(true);
-            }catch (ClassNotFoundException | SQLException ex) {
-                    Logger.getLogger(TTT.class.getName()).log(Level.SEVERE, null, ex);
-                }
+        this.setVisible(true);
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
@@ -1689,61 +1705,63 @@ public class TTT extends javax.swing.JFrame
         String arr[][] = new String[3][4];
         int totalwon,totalloss,totaldraw,totalgame;
         try 
-            {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/userdatabase?" + "user=root");
-        String query = "select * from data WHERE Username = '" + userid +"'";
-         stmt = conn.createStatement();
-        rs =stmt.executeQuery(query);
-        if (rs.next()) 
-        { 
-            jLabel16.setText(rs.getString(1));
-            jLabel18.setText(rs.getString(2));
-            arr[0][0]=rs.getString(4);
-            arr[0][1]=rs.getString(5);
-            arr[0][2]=rs.getString(6);
-            arr[0][3]=rs.getString(7);
-            
-            arr[1][0]=rs.getString(8);
-            arr[1][1]=rs.getString(9);
-            arr[1][2]=rs.getString(10);
-            arr[1][3]=rs.getString(11);
-            
-            arr[2][0]=rs.getString(12);
-            arr[2][1]=rs.getString(13);
-            arr[2][2]=rs.getString(14);
-            arr[2][3]=rs.getString(15);
-            
-            jLabel27.setText(arr[0][0]);
-            jLabel28.setText(arr[0][1]);
-            jLabel29.setText(arr[0][2]);
-            jLabel30.setText(arr[0][3]);
-            
-            jLabel32.setText(arr[1][0]);
-            jLabel33.setText(arr[1][1]);
-            jLabel34.setText(arr[1][2]);
-            jLabel35.setText(arr[1][3]);
-            
-            jLabel38.setText(arr[2][0]);
-            jLabel39.setText(arr[2][1]);
-            jLabel40.setText(arr[2][2]);
-            jLabel41.setText(arr[2][3]);
-            
-            totalwon=Integer.parseInt(arr[0][0])+Integer.parseInt(arr[0][1])+Integer.parseInt(arr[0][2])+Integer.parseInt(arr[0][3]);
-            totaldraw=Integer.parseInt(arr[1][0])+Integer.parseInt(arr[1][1])+Integer.parseInt(arr[1][2])+Integer.parseInt(arr[1][3]);
-            totalloss=Integer.parseInt(arr[2][0])+Integer.parseInt(arr[2][1])+Integer.parseInt(arr[2][2])+Integer.parseInt(arr[2][3]);
-            
-            totalgame=totalwon+totalloss+totaldraw;
-            
-            jLabel21.setText(Integer.toString(totalgame));
-            jLabel45.setText(Integer.toString(totalwon));
-            jLabel43.setText(Integer.toString(totaldraw));
-            jLabel44.setText(Integer.toString(totalloss));
-            
+        {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/userdatabase?" + "user=root");
+            String query = "select * from data WHERE Username = '" + userid +"'";
+            stmt = conn.createStatement();
+            rs =stmt.executeQuery(query);
+            if (rs.next()) 
+            { 
+                jLabel16.setText(rs.getString(1));
+                jLabel18.setText(rs.getString(2));
+                arr[0][0]=rs.getString(4);
+                arr[0][1]=rs.getString(5);
+                arr[0][2]=rs.getString(6);
+                arr[0][3]=rs.getString(7);
+
+                arr[1][0]=rs.getString(8);
+                arr[1][1]=rs.getString(9);
+                arr[1][2]=rs.getString(10);
+                arr[1][3]=rs.getString(11);
+
+                arr[2][0]=rs.getString(12);
+                arr[2][1]=rs.getString(13);
+                arr[2][2]=rs.getString(14);
+                arr[2][3]=rs.getString(15);
+
+                jLabel27.setText(arr[0][0]);
+                jLabel28.setText(arr[0][1]);
+                jLabel29.setText(arr[0][2]);
+                jLabel30.setText(arr[0][3]);
+
+                jLabel32.setText(arr[1][0]);
+                jLabel33.setText(arr[1][1]);
+                jLabel34.setText(arr[1][2]);
+                jLabel35.setText(arr[1][3]);
+
+                jLabel38.setText(arr[2][0]);
+                jLabel39.setText(arr[2][1]);
+                jLabel40.setText(arr[2][2]);
+                jLabel41.setText(arr[2][3]);
+
+                totalwon=Integer.parseInt(arr[0][0])+Integer.parseInt(arr[0][1])+Integer.parseInt(arr[0][2])+Integer.parseInt(arr[0][3]);
+                totaldraw=Integer.parseInt(arr[1][0])+Integer.parseInt(arr[1][1])+Integer.parseInt(arr[1][2])+Integer.parseInt(arr[1][3]);
+                totalloss=Integer.parseInt(arr[2][0])+Integer.parseInt(arr[2][1])+Integer.parseInt(arr[2][2])+Integer.parseInt(arr[2][3]);
+
+                totalgame=totalwon+totalloss+totaldraw;
+
+                jLabel21.setText(Integer.toString(totalgame));
+                jLabel45.setText(Integer.toString(totalwon));
+                jLabel43.setText(Integer.toString(totaldraw));
+                jLabel44.setText(Integer.toString(totalloss));
+
+            }
         }
-            }catch (ClassNotFoundException | SQLException ex) {
-                    Logger.getLogger(TTT.class.getName()).log(Level.SEVERE, null, ex);
-                }
+        catch (ClassNotFoundException | SQLException ex) 
+        {
+            Logger.getLogger(TTT.class.getName()).log(Level.SEVERE, null, ex);
+        }
         stats.setVisible(true);   // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
 
