@@ -318,7 +318,7 @@ public class TTT extends javax.swing.JFrame
             return true;
         }
     }
-   public boolean checkUsername(String userid) throws ClassNotFoundException
+    public boolean checkUsername(String userid) throws ClassNotFoundException
     {
         PreparedStatement ps;
         ResultSet rs;
@@ -370,8 +370,9 @@ public class TTT extends javax.swing.JFrame
         jButton2 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
-        jPanel10 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
         register = new javax.swing.JFrame();
         jTextField3 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -380,32 +381,13 @@ public class TTT extends javax.swing.JFrame
         jTextField4 = new javax.swing.JTextField();
         jButton6 = new javax.swing.JButton();
         jButton21 = new javax.swing.JButton();
-        jPanel35 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
         jPasswordField2 = new javax.swing.JPasswordField();
         jPasswordField3 = new javax.swing.JPasswordField();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
         game = new javax.swing.JFrame();
-        jPanel12 = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
-        jButton7 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jButton8 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jButton10 = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
-        jButton11 = new javax.swing.JButton();
-        jPanel6 = new javax.swing.JPanel();
-        jButton12 = new javax.swing.JButton();
-        jPanel7 = new javax.swing.JPanel();
-        jButton13 = new javax.swing.JButton();
-        jPanel8 = new javax.swing.JPanel();
-        jButton14 = new javax.swing.JButton();
-        jPanel9 = new javax.swing.JPanel();
-        jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
         jLabel49 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -413,57 +395,18 @@ public class TTT extends javax.swing.JFrame
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
         jLabel52 = new javax.swing.JLabel();
         stats = new javax.swing.JFrame();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jPanel34 = new javax.swing.JPanel();
-        jPanel13 = new javax.swing.JPanel();
-        jPanel14 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jPanel16 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
-        jPanel17 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        jPanel18 = new javax.swing.JPanel();
-        jLabel25 = new javax.swing.JLabel();
-        jPanel19 = new javax.swing.JPanel();
-        jLabel37 = new javax.swing.JLabel();
-        jPanel20 = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
-        jPanel21 = new javax.swing.JPanel();
-        jLabel28 = new javax.swing.JLabel();
-        jPanel22 = new javax.swing.JPanel();
-        jLabel29 = new javax.swing.JLabel();
-        jPanel32 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jPanel23 = new javax.swing.JPanel();
-        jLabel31 = new javax.swing.JLabel();
-        jPanel24 = new javax.swing.JPanel();
-        jLabel32 = new javax.swing.JLabel();
-        jPanel33 = new javax.swing.JPanel();
-        jLabel33 = new javax.swing.JLabel();
-        jPanel30 = new javax.swing.JPanel();
-        jLabel34 = new javax.swing.JLabel();
-        jPanel31 = new javax.swing.JPanel();
-        jLabel35 = new javax.swing.JLabel();
-        jPanel25 = new javax.swing.JPanel();
-        jLabel36 = new javax.swing.JLabel();
-        jPanel26 = new javax.swing.JPanel();
-        jLabel38 = new javax.swing.JLabel();
-        jPanel27 = new javax.swing.JPanel();
-        jLabel39 = new javax.swing.JLabel();
-        jPanel28 = new javax.swing.JPanel();
-        jLabel40 = new javax.swing.JLabel();
-        jPanel29 = new javax.swing.JPanel();
-        jLabel41 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
@@ -471,6 +414,32 @@ public class TTT extends javax.swing.JFrame
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         jButton20 = new javax.swing.JButton();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         jButton1 = new javax.swing.JButton();
@@ -492,9 +461,13 @@ public class TTT extends javax.swing.JFrame
         jLabel51 = new javax.swing.JLabel();
 
         login.setSize(new java.awt.Dimension(1280, 720));
+        login.getContentPane().setLayout(null);
 
         jLabel4.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("UserID");
+        login.getContentPane().add(jLabel4);
+        jLabel4.setBounds(410, 150, 114, 50);
 
         jTextField2.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -502,6 +475,8 @@ public class TTT extends javax.swing.JFrame
                 jTextField2ActionPerformed(evt);
             }
         });
+        login.getContentPane().add(jTextField2);
+        jTextField2.setBounds(570, 145, 253, 50);
 
         jPasswordField1.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
@@ -509,110 +484,68 @@ public class TTT extends javax.swing.JFrame
                 jPasswordField1ActionPerformed(evt);
             }
         });
+        login.getContentPane().add(jPasswordField1);
+        jPasswordField1.setBounds(570, 235, 253, 50);
 
         jLabel6.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Password");
+        login.getContentPane().add(jLabel6);
+        jLabel6.setBounds(390, 225, 163, 50);
 
+        jButton2.setBackground(new java.awt.Color(0, 0, 0));
         jButton2.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Login");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
+        login.getContentPane().add(jButton2);
+        jButton2.setBounds(590, 340, 125, 59);
 
+        jButton17.setBackground(new java.awt.Color(0, 0, 0));
         jButton17.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(255, 255, 255));
         jButton17.setText("Back");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
             }
         });
+        login.getContentPane().add(jButton17);
+        jButton17.setBounds(10, 620, 85, 41);
 
+        jButton18.setBackground(new java.awt.Color(0, 0, 0));
         jButton18.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(255, 255, 255));
         jButton18.setText("Register");
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
             }
         });
+        login.getContentPane().add(jButton18);
+        jButton18.setBounds(1020, 610, 169, 59);
 
         jLabel5.setFont(new java.awt.Font("Open Sans", 0, 75)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Login");
+        login.getContentPane().add(jLabel5);
+        jLabel5.setBounds(520, 0, 190, 103);
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(529, 529, 529)
-                .addComponent(jLabel5)
-                .addContainerGap(561, Short.MAX_VALUE))
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/972105c5a775f38cf33d3924aea053f1.jpg"))); // NOI18N
+        jLabel57.setText("jLabel57");
+        login.getContentPane().add(jLabel57);
+        jLabel57.setBounds(410, 20, 100, 90);
 
-        javax.swing.GroupLayout loginLayout = new javax.swing.GroupLayout(login.getContentPane());
-        login.getContentPane().setLayout(loginLayout);
-        loginLayout.setHorizontalGroup(
-            loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginLayout.createSequentialGroup()
-                .addGroup(loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loginLayout.createSequentialGroup()
-                        .addGap(440, 440, 440)
-                        .addComponent(jLabel4)
-                        .addGap(16, 16, 16)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(loginLayout.createSequentialGroup()
-                        .addGap(390, 390, 390)
-                        .addComponent(jLabel6)
-                        .addGap(17, 17, 17)
-                        .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(loginLayout.createSequentialGroup()
-                        .addGap(541, 541, 541)
-                        .addComponent(jButton2)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(loginLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jButton17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton18)
-                .addGap(173, 173, 173))
-        );
-        loginLayout.setVerticalGroup(
-            loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginLayout.createSequentialGroup()
-                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(20, 20, 20)
-                .addGroup(loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addGroup(loginLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(155, 155, 155)
-                .addComponent(jButton2)
-                .addGroup(loginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loginLayout.createSequentialGroup()
-                        .addGap(164, 164, 164)
-                        .addComponent(jButton17)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton18)
-                        .addGap(35, 35, 35))))
-        );
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/ezgif.com-gif-maker (1).gif"))); // NOI18N
+        login.getContentPane().add(jLabel55);
+        jLabel55.setBounds(0, 0, 1200, 680);
 
         register.setSize(new java.awt.Dimension(1280, 720));
+        register.getContentPane().setLayout(null);
 
         jTextField3.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
@@ -620,15 +553,26 @@ public class TTT extends javax.swing.JFrame
                 jTextField3ActionPerformed(evt);
             }
         });
+        register.getContentPane().add(jTextField3);
+        jTextField3.setBounds(560, 180, 340, 56);
 
         jLabel2.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("UserId");
+        register.getContentPane().add(jLabel2);
+        jLabel2.setBounds(410, 180, 110, 50);
 
         jLabel7.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Password");
+        register.getContentPane().add(jLabel7);
+        jLabel7.setBounds(370, 330, 163, 50);
 
         jLabel8.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Name");
+        register.getContentPane().add(jLabel8);
+        jLabel8.setBounds(420, 250, 100, 50);
 
         jTextField4.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -636,260 +580,80 @@ public class TTT extends javax.swing.JFrame
                 jTextField4ActionPerformed(evt);
             }
         });
+        register.getContentPane().add(jTextField4);
+        jTextField4.setBounds(560, 250, 340, 56);
 
+        jButton6.setBackground(new java.awt.Color(0, 0, 0));
         jButton6.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("Submit");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
             }
         });
+        register.getContentPane().add(jButton6);
+        jButton6.setBounds(540, 500, 240, 110);
 
+        jButton21.setBackground(new java.awt.Color(0, 0, 0));
         jButton21.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jButton21.setForeground(new java.awt.Color(255, 255, 255));
         jButton21.setText("Back");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton21ActionPerformed(evt);
             }
         });
-
-        jPanel35.setLayout(new java.awt.BorderLayout());
+        register.getContentPane().add(jButton21);
+        jButton21.setBounds(20, 620, 85, 41);
 
         jLabel1.setFont(new java.awt.Font("Open Sans", 0, 75)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Register");
-
-        jLabel53.setText("jLabel53");
+        register.getContentPane().add(jLabel1);
+        jLabel1.setBounds(510, 30, 340, 140);
 
         jLabel54.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(255, 255, 255));
         jLabel54.setText("Confrim Password ");
+        register.getContentPane().add(jLabel54);
+        jLabel54.setBounds(240, 400, 317, 50);
 
         jPasswordField2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jPasswordField2.setText("jPasswordField2");
         jPasswordField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField2ActionPerformed(evt);
             }
         });
+        register.getContentPane().add(jPasswordField2);
+        jPasswordField2.setBounds(560, 330, 336, 50);
 
         jPasswordField3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jPasswordField3.setText("jPasswordField3");
         jPasswordField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordField3ActionPerformed(evt);
             }
         });
+        register.getContentPane().add(jPasswordField3);
+        jPasswordField3.setBounds(560, 400, 330, 50);
 
-        javax.swing.GroupLayout registerLayout = new javax.swing.GroupLayout(register.getContentPane());
-        register.getContentPane().setLayout(registerLayout);
-        registerLayout.setHorizontalGroup(
-            registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(registerLayout.createSequentialGroup()
-                .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, 811, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(registerLayout.createSequentialGroup()
-                        .addGap(423, 423, 423)
-                        .addComponent(jLabel53))
-                    .addGroup(registerLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton21))
-                    .addGroup(registerLayout.createSequentialGroup()
-                        .addGap(243, 243, 243)
-                        .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel54)
-                            .addComponent(jLabel7))
-                        .addGap(30, 30, 30)
-                        .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPasswordField3)
-                            .addComponent(jPasswordField2)))
-                    .addGroup(registerLayout.createSequentialGroup()
-                        .addGap(450, 450, 450)
-                        .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel2))
-                        .addGap(30, 30, 30)
-                        .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
-                            .addComponent(jTextField3))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, registerLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(517, 517, 517))
-        );
-        registerLayout.setVerticalGroup(
-            registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(registerLayout.createSequentialGroup()
-                .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(registerLayout.createSequentialGroup()
-                        .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
-                        .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(registerLayout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel2))
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(registerLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel53)))
-                .addGap(18, 18, 18)
-                .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jPasswordField2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(registerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel54)
-                    .addComponent(jPasswordField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
-                .addComponent(jButton21)
-                .addContainerGap())
-        );
+        jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/images.png"))); // NOI18N
+        jLabel56.setText("jLabel56");
+        register.getContentPane().add(jLabel56);
+        jLabel56.setBounds(400, 30, 120, 119);
+
+        jLabel53.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/ezgif.com-gif-maker (1).gif"))); // NOI18N
+        register.getContentPane().add(jLabel53);
+        jLabel53.setBounds(0, 0, 1210, 670);
 
         game.setSize(new java.awt.Dimension(1280, 720));
         game.getContentPane().setLayout(null);
 
-        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel12.setLayout(new java.awt.GridLayout(3, 3, 5, 5));
-
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel1.setLayout(new java.awt.BorderLayout());
-
-        jButton7.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton7.setText(" ");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton7, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel1);
-
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel2.setLayout(new java.awt.BorderLayout());
-
-        jButton8.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton8.setText(" ");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jButton8, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel2);
-
-        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel3.setLayout(new java.awt.BorderLayout());
-
-        jButton9.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton9.setText(" ");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton9, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel3);
-
-        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel4.setLayout(new java.awt.BorderLayout());
-
-        jButton10.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton10.setText(" ");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        jPanel4.add(jButton10, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel4);
-
-        jPanel5.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel5.setLayout(new java.awt.BorderLayout());
-
-        jButton11.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton11.setText(" ");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(jButton11, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel5);
-
-        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel6.setLayout(new java.awt.BorderLayout());
-
-        jButton12.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton12.setText(" ");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(jButton12, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel6);
-
-        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel7.setLayout(new java.awt.BorderLayout());
-
-        jButton13.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton13.setText(" ");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
-        jPanel7.add(jButton13, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel7);
-
-        jPanel8.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel8.setLayout(new java.awt.BorderLayout());
-
-        jButton14.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton14.setText(" ");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
-        jPanel8.add(jButton14, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel8);
-
-        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel9.setLayout(new java.awt.BorderLayout());
-
-        jButton15.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
-        jButton15.setText(" ");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-        jPanel9.add(jButton15, java.awt.BorderLayout.CENTER);
-
-        jPanel12.add(jPanel9);
-
-        game.getContentPane().add(jPanel12);
-        jPanel12.setBounds(0, 10, 900, 700);
-
+        jButton16.setBackground(new java.awt.Color(0, 0, 0));
         jButton16.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(255, 255, 255));
         jButton16.setText("Back");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -897,378 +661,390 @@ public class TTT extends javax.swing.JFrame
             }
         });
         game.getContentPane().add(jButton16);
-        jButton16.setBounds(1040, 610, 111, 59);
+        jButton16.setBounds(880, 520, 111, 59);
 
         jLabel49.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
         jLabel49.setText("Draw :");
         game.getContentPane().add(jLabel49);
-        jLabel49.setBounds(960, 120, 72, 33);
+        jLabel49.setBounds(900, 160, 72, 33);
 
         jLabel10.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Player O:");
         game.getContentPane().add(jLabel10);
-        jLabel10.setBounds(940, 80, 99, 33);
+        jLabel10.setBounds(870, 120, 99, 33);
 
         jLabel9.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Player X:");
         game.getContentPane().add(jLabel9);
-        jLabel9.setBounds(940, 40, 94, 33);
+        jLabel9.setBounds(870, 80, 94, 33);
 
         jLabel11.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel11.setText("0              ");
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setText("0  ");
         game.getContentPane().add(jLabel11);
-        jLabel11.setBounds(1040, 40, 98, 30);
+        jLabel11.setBounds(990, 80, 30, 30);
 
         jLabel12.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel12.setText("0              ");
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("0");
         game.getContentPane().add(jLabel12);
-        jLabel12.setBounds(1040, 80, 98, 33);
+        jLabel12.setBounds(990, 120, 20, 33);
 
         jLabel50.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(255, 255, 255));
         jLabel50.setText("0");
         game.getContentPane().add(jLabel50);
-        jLabel50.setBounds(1040, 120, 110, 33);
+        jLabel50.setBounds(990, 160, 20, 33);
+
+        jButton11.setBackground(new java.awt.Color(0, 0, 0));
+        jButton11.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(255, 255, 255));
+        jButton11.setText(" ");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton11);
+        jButton11.setBounds(270, 230, 250, 212);
+
+        jButton12.setBackground(new java.awt.Color(0, 0, 0));
+        jButton12.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(255, 255, 255));
+        jButton12.setText(" ");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton12);
+        jButton12.setBounds(530, 230, 250, 212);
+
+        jButton14.setBackground(new java.awt.Color(0, 0, 0));
+        jButton14.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton14.setForeground(new java.awt.Color(255, 255, 255));
+        jButton14.setText(" ");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton14);
+        jButton14.setBounds(270, 450, 250, 212);
+
+        jButton15.setBackground(new java.awt.Color(0, 0, 0));
+        jButton15.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton15.setForeground(new java.awt.Color(255, 255, 255));
+        jButton15.setText(" ");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton15);
+        jButton15.setBounds(530, 450, 250, 212);
+
+        jButton8.setBackground(new java.awt.Color(0, 0, 0));
+        jButton8.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText(" ");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton8);
+        jButton8.setBounds(270, 10, 250, 212);
+
+        jButton7.setBackground(new java.awt.Color(0, 0, 0));
+        jButton7.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText(" ");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton7);
+        jButton7.setBounds(10, 10, 250, 212);
+
+        jButton9.setBackground(new java.awt.Color(0, 0, 0));
+        jButton9.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText(" ");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton9);
+        jButton9.setBounds(530, 10, 250, 212);
+
+        jButton10.setBackground(new java.awt.Color(0, 0, 0));
+        jButton10.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setText(" ");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton10);
+        jButton10.setBounds(10, 230, 250, 212);
+
+        jButton13.setBackground(new java.awt.Color(0, 0, 0));
+        jButton13.setFont(new java.awt.Font("Open Sans", 0, 96)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(255, 255, 255));
+        jButton13.setText(" ");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
+        game.getContentPane().add(jButton13);
+        jButton13.setBounds(10, 450, 250, 212);
+
+        jLabel52.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel52.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/ezgif.com-gif-maker (1).gif"))); // NOI18N
+        jLabel52.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         game.getContentPane().add(jLabel52);
-        jLabel52.setBounds(0, 0, 1280, 720);
+        jLabel52.setBounds(0, 0, 1200, 680);
 
         stats.setSize(new java.awt.Dimension(1280, 720));
+        stats.getContentPane().setLayout(null);
 
-        jLabel15.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
-        jLabel15.setText("UserID :");
-
-        jLabel16.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
-        jLabel16.setText("xxxxxxxxxx");
-
-        jLabel17.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
-        jLabel17.setText("Name :");
-
-        jLabel18.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
-        jLabel18.setText("aditya shah");
-
-        jLabel19.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel19.setText("Total Game :");
-
-        jLabel20.setFont(new java.awt.Font("Open Sans Extrabold", 0, 36)); // NOI18N
-        jLabel20.setText("STATIC");
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(566, 566, 566)
-                .addComponent(jLabel20)
-                .addContainerGap(589, Short.MAX_VALUE))
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel20)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jLabel21.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("0");
-
-        jPanel34.setBackground(new java.awt.Color(0, 0, 0));
-
-        jPanel13.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel13.setLayout(new java.awt.GridLayout(4, 5, 5, 5));
-
-        jPanel14.setLayout(new java.awt.BorderLayout());
-        jPanel13.add(jPanel14);
-
-        jPanel15.setLayout(new java.awt.BorderLayout());
-
-        jLabel22.setFont(new java.awt.Font("Open Sans Extrabold", 0, 24)); // NOI18N
-        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel22.setText("iMPOSSIBLE Bot");
-        jPanel15.add(jLabel22, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel15);
-
-        jPanel16.setLayout(new java.awt.BorderLayout());
-
-        jLabel23.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("Hard Bot");
-        jPanel16.add(jLabel23, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel16);
-
-        jPanel17.setLayout(new java.awt.BorderLayout());
-
-        jLabel24.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24.setText("Medium Bot");
-        jPanel17.add(jLabel24, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel17);
-
-        jPanel18.setLayout(new java.awt.BorderLayout());
-
-        jLabel25.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel25.setText("Easy Bot");
-        jPanel18.add(jLabel25, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel18);
-
-        jPanel19.setLayout(new java.awt.BorderLayout());
-
-        jLabel37.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel37.setText("Won");
-        jPanel19.add(jLabel37, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel19);
-
-        jPanel20.setLayout(new java.awt.BorderLayout());
-
-        jLabel27.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("0");
-        jPanel20.add(jLabel27, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel20);
-
-        jPanel21.setLayout(new java.awt.BorderLayout());
-
-        jLabel28.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setText("0");
-        jPanel21.add(jLabel28, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel21);
-
-        jPanel22.setLayout(new java.awt.BorderLayout());
-
-        jLabel29.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setText("0");
-        jPanel22.add(jLabel29, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel22);
-
-        jPanel32.setLayout(new java.awt.BorderLayout());
-
-        jLabel30.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel30.setText("0");
-        jPanel32.add(jLabel30, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel32);
-
-        jPanel23.setLayout(new java.awt.BorderLayout());
-
-        jLabel31.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setText("Draw");
-        jPanel23.add(jLabel31, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel23);
-
-        jPanel24.setLayout(new java.awt.BorderLayout());
-
-        jLabel32.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setText("0");
-        jPanel24.add(jLabel32, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel24);
-
-        jPanel33.setLayout(new java.awt.BorderLayout());
-
-        jLabel33.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel33.setText("0");
-        jPanel33.add(jLabel33, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel33);
-
-        jPanel30.setLayout(new java.awt.BorderLayout());
-
-        jLabel34.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel34.setText("0");
-        jPanel30.add(jLabel34, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel30);
-
-        jPanel31.setLayout(new java.awt.BorderLayout());
-
-        jLabel35.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel35.setText("0");
-        jPanel31.add(jLabel35, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel31);
-
-        jPanel25.setLayout(new java.awt.BorderLayout());
-
-        jLabel36.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setText("Lost");
-        jPanel25.add(jLabel36, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel25);
-
-        jPanel26.setLayout(new java.awt.BorderLayout());
-
-        jLabel38.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel38.setText("0");
-        jPanel26.add(jLabel38, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel26);
-
-        jPanel27.setLayout(new java.awt.BorderLayout());
-
-        jLabel39.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel39.setText("0");
-        jPanel27.add(jLabel39, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel27);
-
-        jPanel28.setLayout(new java.awt.BorderLayout());
-
-        jLabel40.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel40.setText("0");
-        jPanel28.add(jLabel40, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel28);
-
-        jPanel29.setLayout(new java.awt.BorderLayout());
-
-        jLabel41.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel41.setText("0");
-        jPanel29.add(jLabel41, java.awt.BorderLayout.CENTER);
-
-        jPanel13.add(jPanel29);
-
-        javax.swing.GroupLayout jPanel34Layout = new javax.swing.GroupLayout(jPanel34);
-        jPanel34.setLayout(jPanel34Layout);
-        jPanel34Layout.setHorizontalGroup(
-            jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel34Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel34Layout.setVerticalGroup(
-            jPanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel34Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        jLabel26.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel26.setText("Total Wins   :");
-
-        jLabel42.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel42.setText("Total Draws:");
-
-        jLabel43.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        stats.getContentPane().add(jLabel21);
+        jLabel21.setBounds(1030, 150, 110, 50);
+
+        jLabel26.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setText("Total Wins :");
+        stats.getContentPane().add(jLabel26);
+        jLabel26.setBounds(820, 230, 200, 50);
+
+        jLabel42.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel42.setText("Total Draws :");
+        stats.getContentPane().add(jLabel42);
+        jLabel42.setBounds(790, 190, 220, 50);
+
+        jLabel43.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setText("0");
+        stats.getContentPane().add(jLabel43);
+        jLabel43.setBounds(1030, 190, 120, 50);
 
-        jLabel44.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel44.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
         jLabel44.setText("0");
+        stats.getContentPane().add(jLabel44);
+        jLabel44.setBounds(1030, 230, 120, 50);
 
-        jLabel45.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel45.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(255, 255, 255));
         jLabel45.setText("0");
+        stats.getContentPane().add(jLabel45);
+        jLabel45.setBounds(1030, 270, 130, 50);
 
-        jLabel46.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel46.setText("Total Loss    :");
+        jLabel46.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel46.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel46.setText("Total Loss :");
+        stats.getContentPane().add(jLabel46);
+        jLabel46.setBounds(830, 270, 187, 50);
 
+        jButton20.setBackground(new java.awt.Color(0, 0, 0));
         jButton20.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jButton20.setForeground(new java.awt.Color(255, 255, 255));
         jButton20.setText("Back");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
             }
         });
+        stats.getContentPane().add(jButton20);
+        jButton20.setBounds(20, 620, 85, 41);
 
-        javax.swing.GroupLayout statsLayout = new javax.swing.GroupLayout(stats.getContentPane());
-        stats.getContentPane().setLayout(statsLayout);
-        statsLayout.setHorizontalGroup(
-            statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(statsLayout.createSequentialGroup()
-                .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(statsLayout.createSequentialGroup()
-                        .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(statsLayout.createSequentialGroup()
-                                .addGap(26, 26, 26)
-                                .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel15)
-                                    .addComponent(jLabel17))
-                                .addGap(26, 26, 26)
-                                .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel16)
-                                    .addComponent(jLabel18))
-                                .addGap(219, 219, 219)
-                                .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel19)
-                                    .addComponent(jLabel26)
-                                    .addComponent(jLabel42)
-                                    .addComponent(jLabel46))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel44)
-                                    .addComponent(jLabel45)
-                                    .addComponent(jLabel21)
-                                    .addComponent(jLabel43)))
-                            .addGroup(statsLayout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jButton20)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(statsLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        statsLayout.setVerticalGroup(
-            statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(statsLayout.createSequentialGroup()
-                .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, statsLayout.createSequentialGroup()
-                        .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel21))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel26)
-                            .addComponent(jLabel45))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel42)
-                            .addComponent(jLabel43)))
-                    .addGroup(statsLayout.createSequentialGroup()
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel16)
-                            .addComponent(jLabel15))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel17)
-                            .addComponent(jLabel18))
-                        .addGap(13, 13, 13)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(statsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel46)
-                    .addComponent(jLabel44))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton20)
-                .addContainerGap())
-        );
+        jLabel22.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel22.setText("iMPOSSIBLE Bot");
+        stats.getContentPane().add(jLabel22);
+        jLabel22.setBounds(270, 340, 271, 50);
+
+        jLabel23.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel23.setText("Hard Bot");
+        stats.getContentPane().add(jLabel23);
+        jLabel23.setBounds(550, 340, 160, 50);
+
+        jLabel24.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Medium Bot");
+        stats.getContentPane().add(jLabel24);
+        jLabel24.setBounds(720, 340, 206, 50);
+
+        jLabel25.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel25.setText("Easy Bot");
+        stats.getContentPane().add(jLabel25);
+        jLabel25.setBounds(950, 340, 142, 50);
+
+        jLabel37.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel37.setText("Won");
+        stats.getContentPane().add(jLabel37);
+        jLabel37.setBounds(140, 410, 100, 50);
+
+        jLabel31.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel31.setText("Draw");
+        stats.getContentPane().add(jLabel31);
+        jLabel31.setBounds(150, 460, 89, 50);
+
+        jLabel36.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("Lost");
+        stats.getContentPane().add(jLabel36);
+        jLabel36.setBounds(150, 510, 71, 50);
+
+        jLabel27.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setText("0");
+        stats.getContentPane().add(jLabel27);
+        jLabel27.setBounds(340, 410, 95, 40);
+
+        jLabel28.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel28.setText("0");
+        stats.getContentPane().add(jLabel28);
+        jLabel28.setBounds(570, 410, 95, 40);
+
+        jLabel29.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel29.setText("0");
+        stats.getContentPane().add(jLabel29);
+        jLabel29.setBounds(770, 410, 95, 40);
+
+        jLabel30.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setText("0");
+        stats.getContentPane().add(jLabel30);
+        jLabel30.setBounds(970, 410, 95, 40);
+
+        jLabel32.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel32.setText("0");
+        stats.getContentPane().add(jLabel32);
+        jLabel32.setBounds(340, 460, 95, 40);
+
+        jLabel33.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel33.setText("0");
+        stats.getContentPane().add(jLabel33);
+        jLabel33.setBounds(570, 460, 95, 40);
+
+        jLabel34.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel34.setText("0");
+        stats.getContentPane().add(jLabel34);
+        jLabel34.setBounds(770, 460, 95, 40);
+
+        jLabel35.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel35.setText("0");
+        stats.getContentPane().add(jLabel35);
+        jLabel35.setBounds(970, 460, 95, 40);
+
+        jLabel38.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel38.setText("0");
+        stats.getContentPane().add(jLabel38);
+        jLabel38.setBounds(340, 510, 95, 40);
+
+        jLabel39.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel39.setText("0");
+        stats.getContentPane().add(jLabel39);
+        jLabel39.setBounds(570, 510, 95, 40);
+
+        jLabel40.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel40.setText("0");
+        stats.getContentPane().add(jLabel40);
+        jLabel40.setBounds(770, 510, 95, 40);
+
+        jLabel41.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel41.setText("0");
+        stats.getContentPane().add(jLabel41);
+        jLabel41.setBounds(970, 510, 95, 40);
+
+        jLabel17.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Name :");
+        stats.getContentPane().add(jLabel17);
+        jLabel17.setBounds(130, 160, 119, 50);
+
+        jLabel18.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel18.setText("     ");
+        stats.getContentPane().add(jLabel18);
+        jLabel18.setBounds(260, 160, 370, 50);
+
+        jLabel15.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setText("UserID :");
+        stats.getContentPane().add(jLabel15);
+        jLabel15.setBounds(120, 220, 133, 50);
+
+        jLabel16.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("     ");
+        stats.getContentPane().add(jLabel16);
+        jLabel16.setBounds(260, 220, 400, 50);
+
+        jLabel19.setFont(new java.awt.Font("Open Sans", 0, 36)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Total Game :");
+        stats.getContentPane().add(jLabel19);
+        jLabel19.setBounds(800, 150, 211, 50);
+
+        jLabel20.setFont(new java.awt.Font("Open Sans Extrabold", 0, 50)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel20.setText("Statistics");
+        stats.getContentPane().add(jLabel20);
+        jLabel20.setBounds(450, 40, 250, 60);
+
+        jLabel58.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/ezgif.com-gif-maker (1).gif"))); // NOI18N
+        jLabel58.setText("jLabel58");
+        stats.getContentPane().add(jLabel58);
+        jLabel58.setBounds(0, 0, 1200, 680);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tic Tac Toe");
@@ -1298,7 +1074,7 @@ public class TTT extends javax.swing.JFrame
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(557, 514, 181, 111);
+        jButton3.setBounds(520, 450, 181, 111);
 
         jButton4.setBackground(new java.awt.Color(0, 0, 0));
         jButton4.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
@@ -1441,7 +1217,7 @@ public class TTT extends javax.swing.JFrame
         getContentPane().add(jLabel48);
         jLabel48.setBounds(332, 251, 85, 33);
 
-        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/ezgif.com-gif-maker (1).gif"))); // NOI18N
+        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tic_tac_toe/main.gif"))); // NOI18N
         jLabel51.setText("jLabel51");
         getContentPane().add(jLabel51);
         jLabel51.setBounds(0, 0, 1200, 680);
@@ -1929,45 +1705,14 @@ public class TTT extends javax.swing.JFrame
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel16;
-    private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel20;
-    private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel22;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
-    private javax.swing.JPanel jPanel29;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel30;
-    private javax.swing.JPanel jPanel31;
-    private javax.swing.JPanel jPanel32;
-    private javax.swing.JPanel jPanel33;
-    private javax.swing.JPanel jPanel34;
-    private javax.swing.JPanel jPanel35;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JPasswordField jPasswordField3;
